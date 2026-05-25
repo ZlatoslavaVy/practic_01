@@ -37,12 +37,15 @@ a {
 }
 .main-nav {
 }
+
 .main-nav-list {
   display: flex;
   gap: 40px;
 }
+
 .nav-list-item {
 }
+
 .nav-link {
   font-weight: 500;
   font-size: 14px;
@@ -68,4 +71,41 @@ a {
   justify-content: flex-start;
   flex-direction: row;
   gap: 8px;
+}
+
+.main-page {
+}
+.container {
+}
+
+.main-page .container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-us-list {
+  display: flex;
+  gap: 40px;
+}
+
+.about-us-list-item {
+  width: 580px;
+  height: 532px;
+}
+
+.about-us-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 0.91667;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+}
+
+.about-us-description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.7);
 }

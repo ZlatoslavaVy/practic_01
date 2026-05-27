@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Watch Charm</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./scc/styles.css" />
     <link rel="stylesheet" href="./scc/Gilroy/stylesheet.css" />
   </head>
@@ -55,36 +62,123 @@
     </header>
 
     <main class="main-page">
-      <section id="about_us">
+      <section id="about_us" class="about-us">
         <div class="container">
-          <ul class="about-us-list">
-            <li class="about-us-list-item">
-              <h1 class="about-us-title">About Us</h1>
-              <p class="about-us-description">
-                Welcome to our premium watch collection, where luxury and style
-                meet functionality and precision. Our selection of timepieces
-                embodies the very best in Swiss craftsmanship and engineering,
-                ensuring that you'll always have a reliable and stylish
-                accessory on your wrist.
-              </p>
-              <p class="about-us-description">
-                At our premium watch collection, we believe that a watch is more
-                than just a timekeeping device – it's a statement piece that
-                reflects your personality and style. So why settle for anything
-                less than the best?
-              </p>
-              <button type="button">View catalog</button>
+          <div class="about-us-list">
+            <h1 class="about-us-title">About Us</h1>
+            <p class="about-us-description">
+              Welcome to our premium watch collection, where luxury and style
+              meet functionality and precision. Our selection of timepieces
+              embodies the very best in Swiss craftsmanship and engineering,
+              ensuring that you'll always have a reliable and stylish accessory
+              on your wrist.
+            </p>
+            <p class="about-us-description">
+              At our premium watch collection, we believe that a watch is more
+              than just a timekeeping device – it's a statement piece that
+              reflects your personality and style. So why settle for anything
+              less than the best?
+            </p>
+            <button type="button" class="about-us-btn">View catalog</button>
+          </div>
+          <img src="./images/watch.png" />
+        </div>
+      </section>
+      <section id="catalog">
+        <div class="container">
+          <h2 class="catalog-title">Catalog</h2>
+
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <img src="./images/Garmin-Solar.png" alt="Garmin-Solar" />
+              <h3 class="catalog-descr">Garmin Fenix 7X Pro Sapphire Solar</h3>
+              <p class="catalog-price">€500</p>
             </li>
-            <li class="about-us-list-item">
-              <img src="./images/watch.png" />
+            <li class="catalog-item">
+              <img src="./images/Garmin-Atlet.png" alt="Garmin-Atlet" />
+              <h3 class="catalog-descr">Garmin Marq Athlete</h3>
+              <p class="catalog-price">€450</p>
+            </li>
+            <li class="catalog-item">
+              <img src="./images/Garmin-Descent.png" alt="Garmin-Descent" />
+              <h3 class="catalog-descr">Garmin Descent MK1</h3>
+              <p class="catalog-price">€680</p>
+            </li>
+            <li class="catalog-item">
+              <img src="./images/Garmin-Delta.png" alt="Garmin-Delta" />
+              <h3 class="catalog-descr">Garmin D2 Delta PX</h3>
+              <p class="catalog-price">€380</p>
+            </li>
+            <li class="catalog-item">
+              <img src="./images/Garmin-Fenix.png" alt="Garmin-Fenix" />
+              <h3 class="catalog-descr">Garmin Fenix 6 Pro Solar</h3>
+              <p class="catalog-price">€400</p>
+            </li>
+            <li class="catalog-item">
+              <img src="./images/Garmin-Steel.png" alt="Garmin-Steel" />
+              <h3 class="catalog-descr">
+                Tube Watch S42 Date Steel With Black Case
+              </h3>
+              <p class="catalog-price">€395</p>
             </li>
           </ul>
         </div>
       </section>
-      <section id="catalog"></section>
       <section id="sale"></section>
       <section id="reviews"></section>
-      <section id="contact_us"></section>
+      <section id="contact_us">
+        <div class="container">
+          <h2 class="contact-title">Contact Us</h2>
+          <div class="contact-wrap">
+            <div class="contact-us-card">
+              <p class="contact-form-descr">
+                Please use the form below to contact us. Enter your name, email,
+                phone, and message and we'll get back to you shortly.
+              </p>
+              <form class="contact-form">
+                <label class="form-label">
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                  />
+                </label>
+                <label class="form-label">
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                  />
+                </label>
+                <label class="form-label">
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="phone"
+                    placeholder="+380"
+                  />
+                </label>
+                <label class="form-label form-label-comment">
+                  <input
+                    class="form-input comment-input"
+                    type="text"
+                    name="comment"
+                    placeholder="Comment"
+                  />
+                </label>
+                <button class="form-button" type="submit">Send</button>
+              </form>
+            </div>
+            <img
+              class="contact-watch"
+              src="./images/contact-watch.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
